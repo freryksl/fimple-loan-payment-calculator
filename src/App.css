@@ -1,0 +1,146 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.inner-container {
+  width: 55vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1vw;
+  padding: 2vw 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+}
+
+.form-grid div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.1vw;
+  font-weight: bold;
+}
+
+hr {
+  border-top: 0.1vh solid;
+}
+
+.tax-badge {
+  padding: 0.3vw 1vw; 
+  cursor: pointer; 
+  border-radius: 0.3vw; 
+  font-size: 0.9vw; 
+  font-weight: bold; 
+  border: #212529 solid 0.1vw; 
+  color: #212529;
+  transition: 0.15s ease;
+}
+
+.tax-badge:hover {
+  color: white !important;
+  transition: 0.15s ease;
+  background: #212529;
+}
+
+.table-container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 
+  0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 1vw;
+  padding: 2vw 3vw;
+  background: white;
+}
+
+.table th, td {
+  padding: 1vw;
+  vertical-align: middle;
+}
+
+.table {
+  margin-bottom: 0 !important;
+}
+
+.table td {
+  padding: 0.5vw;
+}
+
+.modal-body {
+  overflow-x: auto !important;
+}
+
+.modal-dialog {
+  max-width: 60vw !important;
+}
+
+.user-input-container {
+  display: flex; 
+  flex-direction: row !important; 
+  align-items: center; 
+  width: 100%;
+  border: 0.1vw solid rgb(118, 118, 118);
+}
+
+.user-input-container div {
+  width: 100%;
+}
+
+.user-input {
+  border: none; 
+  width: 100%; 
+  padding: 0.5vw; 
+  font-size: 1vw;
+  background: white;
+  border-right: 0.1vw #adb5bd solid;
+}
+
+.input-icons {
+  margin: 0 0.5vw;
+  font-size: 2vw;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+select  {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+ 
+.btn {
+  border-radius: 0.5vw !important;
+  padding: 0.5vw 1vw !important; 
+  font-size: 1vw !important; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 0.1vw solid !important
+}
+
+input:focus, select:focus {
+    outline:none;
+}
